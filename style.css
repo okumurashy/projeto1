@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff2fb;
+    overflow-x: hidden;
+    cursor: url(cursor2.cur), auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    color: #ac0fac;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    padding: 10px;
+    background: radial-gradient(circle, rgba(211, 180, 250, 1) 0%, hsl(318, 100%, 89%) 100%);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 120px;
+    height: auto;
+}
+
+.menu a {
+    color: #ac0fac;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 160px 5% 60px; /* Push down under menu */
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 5vw;
+    margin: 0;
+    max-width: 50%;
+}
+
+.part1 {
+    color: #ab78e9;
+    text-shadow: 2px 2px #f186c8;
+}
+
+.part2 {
+    color: #f186c8;
+}
+
+#eternalsugar {
+    max-width: 40%;
+    height: auto;
+}
+
+.product-section {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 10%;
+}
+
+h2 {
+    color: #ac0fac;
+    box-shadow: 0 0 20px #fc9fde;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.novidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.novidades img {
+    width: 30vw;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #9a00ff;
+    transition: transform 0.3s ease;
+}
+
+.novidades img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: radial-gradient(circle, hsl(318, 100%, 89%) 0%, rgba(211, 180, 250, 1) 100%);
+    color: #ac0fac;
+    padding: 20px 10px;
+    border: 90px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 8vw;
+    max-width: 100%;
+}
+
+  #eternalsugar {
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 6vw;
+}
+
+.novidades {
+    flex-direction: column;
+    gap: 20px;
+}
+}
